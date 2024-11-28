@@ -11,8 +11,12 @@ services:
       networks:
          rede_test:
             aliases:
-               - www.proba.lan
                - proba.lan
+               - server1.lan
+               - server2.lan
+               - www.proba.lan
+               - www.server1.lan
+               - www.server2.lan
 
    cliente:
       build: docker/cliente

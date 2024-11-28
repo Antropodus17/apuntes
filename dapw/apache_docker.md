@@ -101,8 +101,7 @@ Lo principal a configurar es el virtual host, empezaremos con las directivas má
     ServerAdmin a23sergiopn@iessanclemente.net
     ServerAlias www.proba.lan
     DocumentRoot /web/server1
-    DirectoryIndex sample.php index.html a.html z.html 
-
+    DirectoryIndex index.html a.html z.html 
     <Directory /web/server1>
         Require all granted
     </Directory>
