@@ -105,6 +105,6 @@ Lo principal a configurar es el virtual host, empezaremos con las directivas má
     <Directory /web/server1>
         Require all granted
     </Directory>
-
+  
 </VirtualHost>
 ```

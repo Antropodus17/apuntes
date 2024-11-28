@@ -6,7 +6,9 @@ services:
          - 8000:80
       volumes:
          - ./configs:/etc/apache2/sites-enabled
-         - ./pages:/web
+         - ./pages/server1:/web/server1
+         - ./pages/server2:/web/server2
+         - ./pages/alias:/srv
 
       networks:
          rede_test:
