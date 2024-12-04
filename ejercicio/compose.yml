@@ -9,6 +9,7 @@ services:
          - ./pages/server1:/web/server1
          - ./pages/server2:/web/server2
          - ./pages/alias:/srv
+         - ./
 
       networks:
          rede_test:
@@ -24,7 +25,9 @@ services:
       build: docker/cliente
       hostname: cliente
       networks:
-         - rede_test
+         rede_test:
+            # ipv4_address: 172.21.0.3/16
+
       environment:
          - DISPLAY=${DISPLAY}
       volumes:

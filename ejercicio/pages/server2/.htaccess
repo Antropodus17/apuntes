@@ -1,0 +1,3 @@
+Options +Indexes
+DirectoryIndex tres.html dous.html index.html
+Require all granted
