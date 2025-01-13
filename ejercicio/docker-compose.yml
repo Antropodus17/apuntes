@@ -9,7 +9,7 @@ services:
          - ./pages/server1:/web/server1
          - ./pages/server2:/web/server2
          - ./pages/alias:/srv
-         - ./
+         - ./certificados:/certificados
 
       networks:
          rede_test:
@@ -26,7 +26,7 @@ services:
       hostname: cliente
       networks:
          rede_test:
-            # ipv4_address: 172.21.0.3/16
+           # ipv4_address: 172.21.0.3/16
 
       environment:
          - DISPLAY=${DISPLAY}
@@ -36,3 +36,4 @@ services:
 
 networks:
    rede_test:
+
