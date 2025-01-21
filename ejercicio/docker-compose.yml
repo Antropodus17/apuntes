@@ -9,7 +9,7 @@ services:
          - ./pages/server1:/web/server1
          - ./pages/server2:/web/server2
          - ./pages/alias:/srv
-         - ./certificados:/certificados
+         - ./certificates:/certificates
 
       networks:
          rede_test:
@@ -22,7 +22,7 @@ services:
                - www.server2.lan
 
    cliente:
-      build: docker/cliente
+      build: docker/client
       hostname: cliente
       networks:
          rede_test:
@@ -32,7 +32,6 @@ services:
          - DISPLAY=${DISPLAY}
       volumes:
          - /tmp/.X11-unix:/tmp/.X11-unix
-      entrypoint: "firefox"
 
 networks:
    rede_test:
